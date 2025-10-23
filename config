@@ -9,13 +9,13 @@
   "app_control": {
     "blocking_enabled": true,
     "minimum_version": "2.0.0",
-    "force_update": true,
+    "force_update": false,
     "block_message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features.",
     "allowed_features": null,
     "blocked_features": null,
     "maintenance_mode": {
-      "enabled": false,
-      "message": "",
+      "enabled": true,
+      "message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features",
       "start_time": null,
       "end_time": null,
       "allow_premium_users": false
