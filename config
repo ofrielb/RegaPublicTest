@@ -10,7 +10,7 @@
     "blocking_enabled": true,
     "minimum_version": "2.0.0",
     "force_update": true,
-    "block_message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features.",
+    "block_message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features haha.",
     "allowed_features": null,
     "blocked_features": null,
     "maintenance_mode": {
