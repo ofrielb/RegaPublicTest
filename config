@@ -43,7 +43,7 @@
     }
   ],
   "app_control": {
-    "blocking_enabled": false,
+    "blocking_enabled": true,
     "minimum_version": null,
     "force_update": false,
     "block_message": null,
