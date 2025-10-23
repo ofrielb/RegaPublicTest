@@ -14,7 +14,7 @@
     "allowed_features": null,
     "blocked_features": null,
     "maintenance_mode": {
-      "enabled": true,
+      "enabled": false,
       "message": "Critical security update required",
       "start_time": null,
       "end_time": null,
