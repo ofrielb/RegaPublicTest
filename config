@@ -1,21 +1,57 @@
 {
-  "version": "1.0.1",
-  "last_updated": "2025-10-23T13:45:00Z",
+  "version": "1.0.0",
+  "last_updated": "2025-10-23T00:00:00Z",
   "push_notifications": {
     "enabled": false,
     "notifications": []
   },
-  "popup_messages": [],
+  "popup_messages": [
+    {
+      "id": "promo_premium_discount_week",
+      "title": "Limited-Time Offer",
+      "message": "Buy premium for discount until next week.",
+      "type": "announcement",
+      "priority": 10,
+      "show_conditions": {
+        "min_version": null,
+        "max_version": null,
+        "show_once": false,
+        "show_after_date": "2025-10-23T00:00:00Z",
+        "show_before_date": "2025-10-30T23:59:59Z",
+        "target_user_types": ["free", "premium"]
+      },
+      "actions": [
+        {
+          "id": "buy_now",
+          "title": "Buy Now",
+          "style": "default",
+          "action": "custom",
+          "url": "rega://premium",
+          "dismiss_on_tap": true
+        },
+        {
+          "id": "later",
+          "title": "Later",
+          "style": "cancel",
+          "action": "dismiss",
+          "url": null,
+          "dismiss_on_tap": true
+        }
+      ],
+      "dismissible": true,
+      "expires_at": "2025-10-30T23:59:59Z"
+    }
+  ],
   "app_control": {
     "blocking_enabled": false,
-    "minimum_version": "2.0.0",
+    "minimum_version": null,
     "force_update": false,
-    "block_message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features.",
+    "block_message": null,
     "allowed_features": null,
     "blocked_features": null,
     "maintenance_mode": {
-      "enabled": true,
-      "message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features",
+      "enabled": false,
+      "message": "",
       "start_time": null,
       "end_time": null,
       "allow_premium_users": false
