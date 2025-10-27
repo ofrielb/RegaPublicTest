@@ -1,143 +1,16 @@
 {
-  "version": "1.0.3",
-  "last_updated": "2025-10-23T14:30:00Z",
+  "version": "1.0.1",
+  "last_updated": "2025-10-23T13:45:00Z",
   "push_notifications": {
-    "enabled": true,
-    "notifications": [
-      {
-        "id": "immediate_welcome",
-        "title": "🌟 Welcome to REGA!",
-        "body": "Your focus journey starts now. This notification was sent immediately when you opened the app.",
-        "schedule_type": "immediate",
-        "schedule_value": null,
-        "action_url": "rega://focus",
-        "badge": 1,
-        "sound": "default",
-        "category": "focus_reminder",
-        "user_info": {
-          "type": "welcome",
-          "priority": "high"
-        }
-      },
-      {
-        "id": "delayed_reminder",
-        "title": "⏰ Time for Focus",
-        "body": "Ready for a quick focus session? This notification was scheduled 2 minutes after app launch.",
-        "schedule_type": "delayed",
-        "schedule_value": "2",
-        "action_url": "rega://challenges",
-        "badge": 0,
-        "sound": "default",
-        "category": "focus_reminder",
-        "user_info": {
-          "type": "focus_reminder",
-          "session_type": "quick"
-        }
-      },
-      {
-        "id": "daily_morning_motivation",
-        "title": "🌅 Good Morning!",
-        "body": "Start your day with intention. Time for your morning focus ritual.",
-        "schedule_type": "daily",
-        "schedule_value": "09:00",
-        "action_url": "rega://focus",
-        "badge": 0,
-        "sound": "gentle_chime.wav",
-        "category": "motivation",
-        "user_info": {
-          "type": "daily_ritual",
-          "time": "morning"
-        }
-      },
-      {
-        "id": "daily_evening_wind_down",
-        "title": "🌙 Evening Wind Down",
-        "body": "Time to disconnect and prepare for restful sleep. Your evening ritual awaits.",
-        "schedule_type": "daily",
-        "schedule_value": "20:30",
-        "action_url": "rega://sleep_mode",
-        "badge": 0,
-        "sound": "soft_bell.wav",
-        "category": "motivation",
-        "user_info": {
-          "type": "daily_ritual",
-          "time": "evening"
-        }
-      },
-      {
-        "id": "weekly_progress_check",
-        "title": "📊 Weekly Progress",
-        "body": "How was your focus week? Check your progress and plan for the week ahead.",
-        "schedule_type": "weekly",
-        "schedule_value": "1:10:00",
-        "action_url": "rega://analytics",
-        "badge": 0,
-        "sound": "default",
-        "category": "motivation",
-        "user_info": {
-          "type": "weekly_review",
-          "day": "monday"
-        }
-      },
-      {
-        "id": "specific_date_announcement",
-        "title": "🎉 Special Announcement",
-        "body": "This notification was scheduled for a specific date and time to test the 'once' schedule type.",
-        "schedule_type": "once",
-        "schedule_value": "2025-10-23T15:00:00Z",
-        "action_url": "rega://announcements",
-        "badge": 1,
-        "sound": "celebration.wav",
-        "category": "announcement",
-        "user_info": {
-          "type": "special_event",
-          "event": "test_notification"
-        }
-      }
-    ]
+    "enabled": false,
+    "notifications": []
   },
-  "popup_messages": [
-    {
-      "id": "push_notification_info",
-      "title": "📱 Push Notifications Enabled",
-      "message": "We've scheduled several test notifications for you:\n\n• Immediate welcome\n• 2-minute delayed reminder\n• Daily at 9:00 AM\n• Daily at 8:30 PM\n• Weekly on Mondays at 10:00 AM\n• One-time at 3:00 PM today\n\nCheck your notification settings if you don't receive them.",
-      "type": "info",
-      "priority": 5,
-      "show_conditions": {
-        "min_version": null,
-        "max_version": null,
-        "show_once": true,
-        "show_after_date": null,
-        "show_before_date": null,
-        "target_user_types": ["free", "premium"]
-      },
-      "actions": [
-        {
-          "id": "check_settings",
-          "title": "Check Settings",
-          "style": "default",
-          "action": "open_settings",
-          "url": null,
-          "dismiss_on_tap": true
-        },
-        {
-          "id": "got_it",
-          "title": "Got It",
-          "style": "cancel",
-          "action": "dismiss",
-          "url": null,
-          "dismiss_on_tap": true
-        }
-      ],
-      "dismissible": true,
-      "expires_at": null
-    }
-  ],
+  "popup_messages": [],
   "app_control": {
     "blocking_enabled": true,
-    "minimum_version": 2.0.0,
+    "minimum_version": "2.0.0",
     "force_update": true,
-    "block_message": null,
+    "block_message": "Critical security update required. Please update to the latest version to continue using REGA. This update includes important security fixes and new features.",
     "allowed_features": null,
     "blocked_features": null,
     "maintenance_mode": {
