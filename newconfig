@@ -1,1 +1,54 @@
-
+{
+  "version": "1.0",
+  "last_updated": "2025-01-15T12:00:00Z",
+  "push_notifications": {
+    "enabled": false,
+    "notifications": []
+  },
+  "popup_messages": [
+    {
+      "id": "update_jan_2025",
+      "title": "Update Available",
+      "message": "A new version of REGA is available with improvements and bug fixes. Update now!",
+      "type": "update",
+      "priority": 10,
+      "show_conditions": {
+        "min_version": null,
+        "max_version": null,
+        "show_once": true,
+        "show_after_date": null,
+        "show_before_date": null,
+        "target_user_types": null
+      },
+      "actions": [
+        {
+          "id": "update",
+          "title": "Update Now",
+          "style": "default",
+          "action": "open_app_store",
+          "url": null,
+          "dismiss_on_tap": true
+        },
+        {
+          "id": "later",
+          "title": "Later",
+          "style": "cancel",
+          "action": "dismiss",
+          "url": null,
+          "dismiss_on_tap": true
+        }
+      ],
+      "dismissible": true,
+      "expires_at": null
+    }
+  ],
+  "app_control": {
+    "blocking_enabled": false,
+    "minimum_version": null,
+    "force_update": false,
+    "block_message": null,
+    "allowed_features": null,
+    "blocked_features": null,
+    "maintenance_mode": null
+  }
+}
