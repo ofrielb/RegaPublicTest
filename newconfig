@@ -15,7 +15,7 @@
       "show_conditions": {
         "min_version": null,
         "max_version": null,
-        "show_once": true,
+        "show_once": false,
         "show_after_date": null,
         "show_before_date": null,
         "target_user_types": null
@@ -26,7 +26,7 @@
           "title": "Update Now",
           "style": "default",
           "action": "open_app_store",
-          "url": null,
+          "url": "https://apps.apple.com/us/app/rega-scan-to-focus/id6751600289",
           "dismiss_on_tap": true
         },
         {
