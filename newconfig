@@ -1,22 +1,22 @@
 {
-  "version": "1.0",
-  "last_updated": "2025-01-15T12:00:00Z",
+  "version": "2.0",
+  "last_updated": "2026-04-23T12:00:00Z",
   "push_notifications": {
     "enabled": false,
     "notifications": []
   },
   "popup_messages": [
     {
-      "id": "update_jan_2025",
-      "title": "Update Available",
-      "message": "A new version of REGA is available with improvements and bug fixes. Update now!",
+      "id": "force_update_apr_2026",
+      "title": "Update Required",
+      "message": "You must update REGA to continue using the app. Please update to the latest version.",
       "type": "update",
-      "priority": 10,
+      "priority": 100,
       "show_conditions": {
         "min_version": null,
-        "max_version": null,
+        "max_version": "2.0.0",
         "show_once": false,
-        "show_after_date": null,
+        "show_after_date": "2026-04-23T00:00:00Z",
         "show_before_date": null,
         "target_user_types": null
       },
@@ -27,26 +27,18 @@
           "style": "default",
           "action": "open_app_store",
           "url": "https://apps.apple.com/us/app/rega-scan-to-focus/id6751600289",
-          "dismiss_on_tap": true
-        },
-        {
-          "id": "later",
-          "title": "Later",
-          "style": "cancel",
-          "action": "dismiss",
-          "url": null,
-          "dismiss_on_tap": true
+          "dismiss_on_tap": false
         }
       ],
-      "dismissible": true,
+      "dismissible": false,
       "expires_at": null
     }
   ],
   "app_control": {
-    "blocking_enabled": false,
-    "minimum_version": null,
-    "force_update": false,
-    "block_message": null,
+    "blocking_enabled": true,
+    "minimum_version": "2.0.0",
+    "force_update": true,
+    "block_message": "Your app version is no longer supported. Please update to continue.",
     "allowed_features": null,
     "blocked_features": null,
     "maintenance_mode": null
